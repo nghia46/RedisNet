@@ -20,6 +20,13 @@ class Program
                 db.StringSet("key2", "1");
                 db.StringSet("key1", "Hello World");
                 db.StringSet("key2", "1");
+
+                db.StringSet("key1", "Hello World");
+                db.StringSet("key2", "1");
+                db.StringSet("key1", "Hello World");
+                db.StringSet("key2", "1");
+                db.StringSet("key1", "Hello World");
+                db.StringSet("key2", "1");
                 // Get values
                 IEnumerable<RedisKey> keys = redis.GetServer(redisConnectionString).Keys();
 
